@@ -8,11 +8,11 @@ window.addEventListener("load", function() {
 	console.log("Good job opening the window");
 	video.autoplay = false;
 	video.load();
-	vol.innerHTML = "100";
+	vol.innerHTML = "100%";
 });
 
 slider.addEventListener("change", function(x){
-	vol.innerHTML = x.currentTarget.value;	
+	vol.innerHTML = x.currentTarget.value + "%";	
 	video.volume = x.currentTarget.value / 100;
 })
 document.getElementById("play").addEventListener("click", function(){
@@ -48,7 +48,7 @@ document.getElementById("skip").addEventListener("click", function(){
 
 document.getElementById("mute").addEventListener("click", function(){
 	video.volume = 0;
-	vol.innerHTML = "0";
+	vol.innerHTML = "0%";
 	slider.value = 0;
 })
 
