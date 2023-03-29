@@ -48,7 +48,7 @@ document.getElementById("skip").addEventListener("click", function(){
 
 document.getElementById("mute").addEventListener("click", function(){
 	video.volume = 0;
-	vol.innerHTML = "0%";
+	vol.innerHTML = "0";
 	slider.value = 0;
 })
 
